@@ -1,0 +1,35 @@
+.flex-grid {
+    display: flex;
+}
+
+.column {
+    flex: auto;
+}
+
+.column-small {
+    flex: 0.2;
+    justify-content: center;
+    align-content: center;
+}
+
+.properties {
+    height: 90%;
+    overflow: auto;
+}
+
+.content {
+    height: calc(100vh - 110px);
+    padding: 50px;
+}
+
+input {
+    width: 99%;
+}
+
+#copy-btn {
+    width: 50%;
+}
+
+#save-btn {
+    width: 50%;
+}

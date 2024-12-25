@@ -1,0 +1,26 @@
+<main class="main">
+  <div class="content">
+    <div class="properties">
+      @for (property of properties; track property.name) {
+        <div class="flex-grid">
+          <div class="column-small">
+            <label for="{{ property.name }}">{{ property.label }}</label>
+          </div>
+          <div class="column">
+            <input type="text" [(ngModel)]="property.value" id="{{ property.name }}" >
+          </div>
+        </div>
+        <hr>
+      }
+    </div>
+    <div class="slides">
+      <user-editor #monacoEditor></user-editor>
+    </div>
+    <div>
+      <button id="copy-btn" (click)="copy()">copy</button>
+      <button id="save-btn" (click)="save()">save</button>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
