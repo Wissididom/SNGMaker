@@ -139,7 +139,7 @@ export class UserEditorComponent {
         inherit: true
       });
       this.editor = monaco.editor.create(container.nativeElement, {
-        value: 'Alice has 666 keys\n',
+        value: '',
         language: 'sngFile',
         theme: 'sngTheme'
       });
