@@ -107,7 +107,7 @@ export class AppComponent {
 
   save() {
     const str = this.monacoEditor.getEditor()?.getValue();
-    if (!str) return; // Don't need to copy if there is nothing to copy
+    if (!str) return; // Don't need to save if there is nothing to save
     let sngFileContent = this.getSngFileContent();
     if (sngFileContent) sngFileContent += str;
     else sngFileContent = str;
@@ -117,8 +117,7 @@ export class AppComponent {
     const fileUrl = URL.createObjectURL(file);
     downloadAncher.href = fileUrl;
     const titleProperty = this.properties.find((entry) => entry.name == 'title');
-    downloadAncher.download = titleProperty && titleProperty.value.trim() != '' ? titleProperty.value : 'sngFile.sng';
-    if (downloadAncher.download != 'sngFile.sng') downloadAncher.download = downloadAncher.download + '.sng';
+    downloadAncher.download = titleProperty && titleProperty.value.trim() != '' ? `${titleProperty.value}.sng` : 'sngFile.sng';
     downloadAncher.click();
   }
 }
