@@ -1,11 +1,11 @@
 import { filter, interval, Observable, ReplaySubject, take } from 'rxjs';
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import * as monaco from "monaco-editor";
 
 @Component({
   selector: 'user-editor',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './user-editor.component.html',
   styleUrl: './user-editor.component.scss',
 })
