@@ -19,7 +19,7 @@ export class UserEditorComponent implements AfterViewInit {
   async ngAfterViewInit(): Promise<void> {
     (monaco as any).MonacoEnvironment = {
       getWorkerUrl: function (_moduleId: string, _label: string): string {
-        return '/assets/lib/monaco-editor/esm/vs/editor/editor.worker.js';
+        return '/assets/lib/monaco-editor/vs/editor/editor.worker.js';
       }
     };
     monaco.languages.register({ id: 'sngFile'});
