@@ -1,4 +1,3 @@
-import { filter, interval, Observable, ReplaySubject, take } from 'rxjs';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 import * as monaco from 'monaco-editor';
