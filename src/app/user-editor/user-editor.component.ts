@@ -154,7 +154,7 @@ export class UserEditorComponent implements AfterViewInit {
     loaderScript.src = '/assets/lib/monaco/vs/loader.js';
     loaderScript.onload = () => {
       window.require.config({ paths: { vs: '/assets/lib/monaco/vs' } });
-      window.require(['vs/editor/editor.api'], () => {
+      window.require(['vs/editor/editor.main'], () => {
         this.monaco$.next(window.monaco);
       });
     };
