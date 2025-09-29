@@ -32,8 +32,8 @@
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/monaco-editor/esm",
-                "output": "/assets/lib/monaco-editor"
+                "input": "node_modules/monaco-editor/min",
+                "output": "/assets/lib/monaco"
               }
             ],
             "styles": [
