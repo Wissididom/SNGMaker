@@ -130,12 +130,10 @@ export class UserEditorComponent implements AfterViewInit {
       colors: {},
     });
     this.editor = monaco.editor.create(this.containerRef.nativeElement, {
-      value: '',
+      value: 'Test',
       language: 'sngFile',
-      theme: 'sngTheme'
+      theme: 'sngTheme',
+      automaticLayout: true
     });
-    setTimeout(() => {
-      this.editor?.layout();
-    }, 0);
   }
 }
