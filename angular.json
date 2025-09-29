@@ -32,7 +32,7 @@
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/monaco-editor",
+                "input": "node_modules/monaco-editor/esm",
                 "output": "/assets/lib/monaco-editor"
               }
             ],
