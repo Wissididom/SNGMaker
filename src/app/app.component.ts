@@ -85,14 +85,14 @@ export class AppComponent {
     }
   }
 
-  getSngFileContent(): string | null {
+  getSngFileContent(): string {
     let sngContent = '';
     for (const property of this.properties) {
       if (property.value.trim() != '') {
         sngContent += `#${this.getSngFilePropertyName(property.name)}=${property.value}\n`;
       }
     }
-    if (!sngContent || sngContent.trim() == '') return null;
+    if (!sngContent || sngContent.trim() == '') return '';
     return `${sngContent}---\n`;
   }
 
