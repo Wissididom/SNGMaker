@@ -134,5 +134,8 @@ export class UserEditorComponent implements AfterViewInit {
       language: 'sngFile',
       theme: 'sngTheme'
     });
+    setTimeout(() => {
+      this.editor?.layout();
+    }, 0);
   }
 }
