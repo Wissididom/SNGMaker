@@ -37,18 +37,20 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/monaco-editor/min/vs/base/browser/ui/codicons/codicon/codicon.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "loader": {
+              ".ttf": "binary"
+            }
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "4MB",
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
