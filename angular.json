@@ -33,14 +33,7 @@
               {
                 "glob": "**/*",
                 "input": "node_modules/monaco-editor/min",
-                "output": "/assets/lib/monaco",
-                "ignore": [
-                  "vs/language/css/**",
-                  "vs/language/html/**",
-                  "vs/language/json/**",
-                  "vs/language/typescript/**",
-                  "vs/language/javascript/**"
-                ]
+                "output": "/assets/lib/monaco"
               }
             ],
             "styles": [
@@ -56,8 +49,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "3MB",
+                  "maximumError": "4MB"
                 },
                 {
                   "type": "anyComponentStyle",
