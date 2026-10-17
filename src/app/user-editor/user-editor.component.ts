@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
 
@@ -6,6 +6,7 @@ import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
   selector: 'user-editor',
   standalone: true,
   templateUrl: './user-editor.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-editor.component.scss',
 })
 export class UserEditorComponent implements AfterViewInit {

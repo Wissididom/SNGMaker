@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { UserEditorComponent } from './user-editor/user-editor.component';
@@ -7,6 +7,7 @@ import { UserEditorComponent } from './user-editor/user-editor.component';
   selector: 'app-root',
   imports: [RouterOutlet, FormsModule, UserEditorComponent],
   templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
